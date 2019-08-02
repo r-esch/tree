@@ -472,10 +472,10 @@ class TreeNode extends React.Component<InternalTreeNodeProps, TreeNodeState> {
     }
 
     // Title
-    const $title = <span className={`${prefixCls}-title`}>{title}</span>;
+    const $title = <div className={`${prefixCls}-title`}>{title}</div>;
 
     return (
-      <span
+      <div
         ref={this.setSelectHandle}
         title={typeof title === 'string' ? title : ''}
         className={classNames(
@@ -495,7 +495,7 @@ class TreeNode extends React.Component<InternalTreeNodeProps, TreeNodeState> {
       >
         {$icon}
         {$title}
-      </span>
+      </div>
     );
   };
 
